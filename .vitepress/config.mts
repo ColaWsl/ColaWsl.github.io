@@ -23,10 +23,28 @@ export default defineConfig({
 
     sidebar: [
       {
-        text: 'Examples',
+        text: 'docker',
         items: [
-          { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' }
+          { text: 'Docker', link: '/notes/docker/Docker' },
+          { text: 'K8S', link: '/notes/docker/Docker' },
+          { text: '部署中间件', link: '/notes/docker/Docker' },
+          { text: '自动化部署持续集成CI/CD', link: '/notes/docker/Docker' },
+        ]
+      },
+      {
+        text: 'springboot',
+        items: [
+          { text: 'Introduction', link: '/notes/springboot/' },
+          { text: 'springboot入门', link: '/notes/springboot/index.md' },
+          { text: '整合三方框架', link: '/notes/springboot/index.md' },
+        ]
+      },
+      {
+        text: 'redis',
+        items: [
+          { text: 'Introduction', link: '/notes/redis/' },
+          { text: 'redis', link: '/notes/redis/index.md' },
+          { text: '整合三方框架', link: '/notes/redis/index.md' },
         ]
       }
     ],
