@@ -45,6 +45,19 @@ export default defineConfig({
                 { text: '整合第三方框架', link: '/notes/springboot/整合第三方框架' },
               ] }
           ]
+        },
+        {
+          text: 'springboot',
+          items: [
+            { text: 'Introduction', link: '/notes/springboot/' },
+            { text: '多环境开发', link: '/notes/springboot/多环境开发' },
+            { text: '整合第三方框架', link: '/notes/springboot/整合第三方框架' },
+            { items: [
+                { text: 'Introduction', link: '/notes/springboot/' },
+                { text: '多环境开发', link: '/notes/springboot/多环境开发' },
+                { text: '整合第三方框架', link: '/notes/springboot/整合第三方框架' },
+              ] }
+          ]
         }
       ],
       '/springboot/':[
