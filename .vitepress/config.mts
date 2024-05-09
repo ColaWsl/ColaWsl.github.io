@@ -8,15 +8,14 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Examples', link: '/markdown-examples' },
-      { text: 'notes', link: '/notes/docker/Docker' },
+      { text: 'notes', link: '/' },
       { text: 'Guide', link: '/guide' },
       {
-        text: 'Menu',
+        text: '分类',
         items: [
-          { text: 'Item A', link: '/item-1' },
-          { text: 'Docker', link: '/notes/docker/Docker' },
-          { text: 'Item C', link: '/item-3' }
+          { text: 'redis', link: '/notes/redis' },
+          { text: 'docker', link: '/notes/docker' },
+          { text: 'springboot', link: '/notes/springboot' }
         ]
       }
     ],
@@ -25,18 +24,22 @@ export default defineConfig({
       {
         text: 'docker',
         items: [
-          { text: 'Docker', link: '/notes/docker/Docker' },
-          { text: 'K8S', link: '/notes/docker/Docker' },
-          { text: '部署中间件', link: '/notes/docker/Docker' },
-          { text: '自动化部署持续集成CI/CD', link: '/notes/docker/Docker' },
+          { text: 'Docker', link: '/notes/docker/' },
+          { text: '部署中间件', link: '/notes/docker/部署中间件' },
+          { text: '自动化部署持续集成CI/CD', link: '/notes/docker/自动化部署持续集成CI/CD' },
         ]
       },
       {
         text: 'springboot',
         items: [
           { text: 'Introduction', link: '/notes/springboot/' },
-          { text: 'springboot入门', link: '/notes/springboot/index.md' },
-          { text: '整合三方框架', link: '/notes/springboot/index.md' },
+          { text: '多环境开发', link: '/notes/springboot/多环境开发' },
+          { text: '整合第三方框架', link: '/notes/springboot/整合第三方框架' },
+          { items: [
+              { text: 'Introduction', link: '/notes/springboot/' },
+              { text: '多环境开发', link: '/notes/springboot/多环境开发' },
+              { text: '整合第三方框架', link: '/notes/springboot/整合第三方框架' },
+            ] }
         ]
       },
       {
@@ -61,7 +64,7 @@ export default defineConfig({
     },
 
     editLink: {
-      pattern: 'https://github.com/ColaWsl/vitepress-docs/:path',
+      pattern: 'https://github.com/ColaWsl/ColaWsl.github.io/:path',
       text: 'Edit this page on GitHub'
     }
   }
