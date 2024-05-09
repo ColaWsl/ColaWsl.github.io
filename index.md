@@ -1,6 +1,6 @@
 ---
 # https://vitepress.dev/reference/default-theme-home-page
-layout: doc
+layout: page
 
 hero:
   name: "My Awesome Project"
