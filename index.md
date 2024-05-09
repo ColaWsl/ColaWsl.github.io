@@ -3,8 +3,8 @@
 layout: home
 
 hero:
-  name: "My Awesome Project"
-  text: "A VitePress Site"
+  name: "个人博客"
+  text: "Keep going,Never stop"
   tagline: My blog tagline
   actions:
     - theme: brand
@@ -13,6 +13,9 @@ hero:
     - theme: alt
       text: API Examples
       link: /api-examples
+    - theme: alt
+      text: GitHub
+      link: https://github.com/ColaWsl/ColaWsl.github.io
 
 features:
   - title: Feature A
@@ -20,6 +23,8 @@ features:
   - title: Feature B
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
   - title: Feature C
+    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit  
+  - title: Feature D
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
 ---
 

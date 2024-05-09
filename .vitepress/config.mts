@@ -28,6 +28,21 @@ export default defineConfig({
             { text: 'Docker', link: '/notes/docker/' },
             { text: '部署中间件', link: '/notes/docker/部署中间件' },
             { text: '自动化部署持续集成CI/CD', link: '/notes/docker/自动化部署持续集成CI/CD' },
+            { text: 'Introduction', link: '/notes/springboot/' },
+            { text: '多环境开发', link: '/notes/springboot/多环境开发' },
+            { text: '整合第三方框架', link: '/notes/springboot/整合第三方框架' }
+          ]
+        },
+        {
+          text: 'docker',
+          collapsed: true,
+          items: [
+            { text: 'Docker', link: '/notes/docker/' },
+            { text: '部署中间件', link: '/notes/docker/部署中间件' },
+            { text: '自动化部署持续集成CI/CD', link: '/notes/docker/自动化部署持续集成CI/CD' },
+            { text: 'Introduction', link: '/notes/springboot/' },
+            { text: '多环境开发', link: '/notes/springboot/多环境开发' },
+            { text: '整合第三方框架', link: '/notes/springboot/整合第三方框架' }
           ]
         }
       ],
@@ -90,6 +105,10 @@ export default defineConfig({
     docFooter: {
       prev: '上一页',
       next: '下一页'
+    },
+
+    outline: {
+      label: '页面导航'
     },
 
     editLink: {
