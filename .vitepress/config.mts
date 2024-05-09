@@ -90,7 +90,7 @@ export default defineConfig({
     },
 
     editLink: {
-      pattern: 'https://github.com/ColaWsl/ColaWsl.github.io/:path',
+      pattern: 'https://github.com/ColaWsl/ColaWsl.github.io/tree/master/:path',
       text: 'Edit this page on GitHub'
     },
 
