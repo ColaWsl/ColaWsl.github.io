@@ -8,8 +8,6 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'notes', link: '/' },
-      { text: 'Guide', link: '/guide' },
       {
         text: '分类',
         items: [
@@ -87,6 +85,11 @@ export default defineConfig({
     footer: {
       message: 'Released under the MIT License.',
       copyright: 'Copyright © 2024-present Austin Slwang'
+    },
+
+    docFooter: {
+      prev: '上一页',
+      next: '下一页'
     },
 
     editLink: {
