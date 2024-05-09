@@ -20,37 +20,49 @@ export default defineConfig({
       }
     ],
 
-    sidebar: [
-      {
-        text: 'docker',
-        items: [
-          { text: 'Docker', link: '/notes/docker/' },
-          { text: '部署中间件', link: '/notes/docker/部署中间件' },
-          { text: '自动化部署持续集成CI/CD', link: '/notes/docker/自动化部署持续集成CI/CD' },
-        ]
-      },
-      {
-        text: 'springboot',
-        items: [
-          { text: 'Introduction', link: '/notes/springboot/' },
-          { text: '多环境开发', link: '/notes/springboot/多环境开发' },
-          { text: '整合第三方框架', link: '/notes/springboot/整合第三方框架' },
-          { items: [
-              { text: 'Introduction', link: '/notes/springboot/' },
-              { text: '多环境开发', link: '/notes/springboot/多环境开发' },
-              { text: '整合第三方框架', link: '/notes/springboot/整合第三方框架' },
-            ] }
-        ]
-      },
-      {
-        text: 'redis',
-        items: [
-          { text: 'Introduction', link: '/notes/redis/' },
-          { text: 'redis', link: '/notes/redis/index.md' },
-          { text: '整合三方框架', link: '/notes/redis/index.md' },
-        ]
-      }
-    ],
+    sidebar: {
+      //   配置当位于不同目录分类时 显示不同的侧边栏
+      '/docker/':[
+        {
+          text: 'docker',
+          items: [
+            { text: 'Docker', link: '/notes/docker/' },
+            { text: '部署中间件', link: '/notes/docker/部署中间件' },
+            { text: '自动化部署持续集成CI/CD', link: '/notes/docker/自动化部署持续集成CI/CD' },
+          ]
+        }
+      ],
+      '/redis/':[
+        {
+          text: 'springboot',
+          items: [
+            { text: 'Introduction', link: '/notes/springboot/' },
+            { text: '多环境开发', link: '/notes/springboot/多环境开发' },
+            { text: '整合第三方框架', link: '/notes/springboot/整合第三方框架' },
+            { items: [
+                { text: 'Introduction', link: '/notes/springboot/' },
+                { text: '多环境开发', link: '/notes/springboot/多环境开发' },
+                { text: '整合第三方框架', link: '/notes/springboot/整合第三方框架' },
+              ] }
+          ]
+        }
+      ],
+      '/springboot/':[
+        {
+          text: 'springboot',
+          items: [
+            { text: 'Introduction', link: '/notes/springboot/' },
+            { text: '多环境开发', link: '/notes/springboot/多环境开发' },
+            { text: '整合第三方框架', link: '/notes/springboot/整合第三方框架' },
+            { items: [
+                { text: 'Introduction', link: '/notes/springboot/' },
+                { text: '多环境开发', link: '/notes/springboot/多环境开发' },
+                { text: '整合第三方框架', link: '/notes/springboot/整合第三方框架' },
+              ] }
+          ]
+        }
+      ],
+    },
 
     socialLinks: [
       { icon: 'github', link: 'https://github.com/ColaWsl' },
