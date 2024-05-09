@@ -22,9 +22,10 @@ export default defineConfig({
 
     sidebar: {
       //   配置当位于不同目录分类时 显示不同的侧边栏
-      '/docker/':[
+      '/notes/docker/':[
         {
           text: 'docker',
+          collapsed: true,
           items: [
             { text: 'Docker', link: '/notes/docker/' },
             { text: '部署中间件', link: '/notes/docker/部署中间件' },
@@ -32,7 +33,7 @@ export default defineConfig({
           ]
         }
       ],
-      '/redis/':[
+      '/notes/redis/':[
         {
           text: 'springboot',
           items: [
@@ -60,7 +61,7 @@ export default defineConfig({
           ]
         }
       ],
-      '/springboot/':[
+      '/notes/springboot/':[
         {
           text: 'springboot',
           items: [
@@ -91,6 +92,10 @@ export default defineConfig({
     editLink: {
       pattern: 'https://github.com/ColaWsl/ColaWsl.github.io/:path',
       text: 'Edit this page on GitHub'
+    },
+
+    search: {
+      provider: 'local'
     }
   }
 })
