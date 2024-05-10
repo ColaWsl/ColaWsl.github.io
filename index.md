@@ -2,10 +2,15 @@
 # https://vitepress.dev/reference/default-theme-home-page
 layout: home
 
+
+
 hero:
-  name: "个人博客"
+  name: "爱幻想的Sheep"
   text: "Keep going,Never stop"
-  tagline: My blog tagline
+  tagline: 编程、音乐
+  image:
+    src: /home.png
+    alt: logo
   actions:
     - theme: brand
       text: Markdown Examples

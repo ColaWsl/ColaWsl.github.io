@@ -1,8 +1,10 @@
 import { defineConfig } from 'vitepress'
 
+import timeline from 'vitepress-markdown-timeline'
+
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "Austin Blog",
+  title: "爱幻想的Sheep",
   description: "A VitePress Site",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
@@ -11,15 +13,39 @@ export default defineConfig({
       {
         text: '分类',
         items: [
-          { text: 'redis', link: '/notes/redis' },
-          { text: 'docker', link: '/notes/docker' },
-          { text: 'springboot', link: '/notes/springboot' }
+          { text: 'redis', link: '/notes/redis/index.md' },
+          { text: 'docker', link: '/notes/docker/index.md' },
+          { text: 'springboot', link: '/notes/springboot/index.md' },
+          {
+            // 该部分的标题
+            text: '二级菜单',
+            items: [
+              { text: 'Item A', link: '...' },
+              { text: 'Item B', link: '...' }
+            ]
+          },
+          { text: '百度', link: 'https://www.baidu.com' },
         ]
-      }
+      },
+      { text: '后端', link: '/' },
+      { text: '前端', link: '/' },
+      { text: '百度', link: 'https://www.baidu.com' },
+      { text: '关于我', link: '/about/index.md' },
+
     ],
 
     sidebar: {
       //   配置当位于不同目录分类时 显示不同的侧边栏
+      '/about':[
+        {
+          text: '关于我',
+          collapsed: false,
+          items: [
+            { text: 'about me', link: '/about/'},
+            { text: '我的经历', link: '/about/我的经历'}
+          ]
+        }
+      ],
       '/notes/docker/':[
         {
           text: 'docker',
@@ -118,6 +144,12 @@ export default defineConfig({
 
     search: {
       provider: 'local'
+    },
+
+  },
+  markdown: {
+    config: (md) =>{
+      md.use(timeline)
     }
   }
 })

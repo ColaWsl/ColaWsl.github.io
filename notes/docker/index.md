@@ -1,6 +1,6 @@
-# Docker
+# Docker <Badge type="warning" text="beta" />
 
-## 简介
+## 简介 <Badge type="danger" text="caution" />
 
 快速构建、运行、管理应用的工具
 
