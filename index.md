@@ -7,7 +7,7 @@ layout: home
 hero:
   name: "爱幻想的Sheep"
   text: "Keep going,Never stop"
-  tagline: 编程、音乐
+  tagline: 这就是我的生活有点多磨
   image:
     src: /home.png
     alt: logo

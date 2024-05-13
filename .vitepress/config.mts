@@ -7,6 +7,7 @@ export default defineConfig({
   title: "爱幻想的Sheep",
   description: "A VitePress Site",
   themeConfig: {
+    logo: '/home.png',
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
@@ -29,9 +30,8 @@ export default defineConfig({
       },
       { text: '后端', link: '/' },
       { text: '前端', link: '/' },
-      { text: '百度', link: 'https://www.baidu.com' },
-      { text: '关于我', link: '/about/index.md' },
-
+      { text: 'Todo', link: '/notes/todo/index.md' },
+      { text: '关于我', link: '/about/index.md' }
     ],
 
     sidebar: {
@@ -59,6 +59,7 @@ export default defineConfig({
             { text: '整合第三方框架', link: '/notes/springboot/整合第三方框架' }
           ]
         },
+        { text: '整合第三方框架', link: '/notes/springboot/整合第三方框架' },
         {
           text: 'docker',
           collapsed: true,
@@ -93,6 +94,7 @@ export default defineConfig({
             { text: '多环境开发', link: '/notes/springboot/多环境开发' },
             { text: '整合第三方框架', link: '/notes/springboot/整合第三方框架' },
             { items: [
+                { text: 'Docker', link: '/notes/docker/' },
                 { text: 'Introduction', link: '/notes/springboot/' },
                 { text: '多环境开发', link: '/notes/springboot/多环境开发' },
                 { text: '整合第三方框架', link: '/notes/springboot/整合第三方框架' },
@@ -103,15 +105,20 @@ export default defineConfig({
       '/notes/springboot/':[
         {
           text: 'springboot',
+          collapsed: true,
           items: [
             { text: 'Introduction', link: '/notes/springboot/' },
             { text: '多环境开发', link: '/notes/springboot/多环境开发' },
             { text: '整合第三方框架', link: '/notes/springboot/整合第三方框架' },
-            { items: [
+            { text: 'springboot 集成第三方框架',
+              collapsed: true,
+              items: [
+                { text: 'Docker', link: '/notes/docker/' },
                 { text: 'Introduction', link: '/notes/springboot/' },
                 { text: '多环境开发', link: '/notes/springboot/多环境开发' },
                 { text: '整合第三方框架', link: '/notes/springboot/整合第三方框架' },
-              ] }
+              ] },
+            { text: '整合第三方框架', link: '/notes/springboot/整合第三方框架' },
           ]
         }
       ],
@@ -147,6 +154,8 @@ export default defineConfig({
     },
 
   },
+
+  // config timeline
   markdown: {
     config: (md) =>{
       md.use(timeline)
