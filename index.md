@@ -9,7 +9,7 @@ hero:
   text: "Keep going,Never stop"
   tagline: 这就是我的生活有点多磨
   image:
-    src: /home.png
+    src: /home.jpg
     alt: logo
   actions:
     - theme: brand
@@ -32,4 +32,3 @@ features:
   - title: Feature D
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
 ---
-

@@ -28,7 +28,12 @@ export default defineConfig({
           { text: '百度', link: 'https://www.baidu.com' },
         ]
       },
-      { text: '后端', link: '/' },
+      { text: '后端',
+        items: [
+          { text: 'Spring Security', link: '/notes/spring-security/SpringSecurity.md' },
+          { text: 'springboot', link: '/notes/springboot/index.md' },
+        ]
+      },
       { text: '前端', link: '/' },
       { text: 'Todo', link: '/todo/index.md' },
       { text: 'Language',
