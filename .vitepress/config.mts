@@ -59,6 +59,10 @@ export default defineConfig({
       ],
       '/todo': [
         {
+          'text': '清单',
+          'link': '/todo/list'
+        },
+        {
           'text': '2024',
           collapsed: false,
           items: [
