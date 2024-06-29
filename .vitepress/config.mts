@@ -36,12 +36,6 @@ export default defineConfig({
       },
       { text: '前端', link: '/' },
       { text: 'Todo', link: '/todo/index.md' },
-      { text: 'Language',
-        items: [
-          { text: 'English', link: '/language/english/index.md' },
-          { text: 'Japanese', link: '/language/japanese/index.md' }
-        ]
-      },
       { text: '关于我', link: '/about/index.md' }
     ],
 
@@ -53,6 +47,7 @@ export default defineConfig({
           collapsed: false,
           items: [
             { text: 'about me', link: '/about/'},
+            { text: '旅游日记', link: '/about/travel'},
             { text: '我的经历', link: '/about/我的经历'}
           ]
         }
@@ -73,33 +68,6 @@ export default defineConfig({
         {
           'text': '2025',
           collapsed: false,
-        }
-      ],
-      '/language/english':[
-        {
-          text: 'English',
-          collapsed: false,
-          items: [
-            { text: ''}
-          ]
-        }
-      ],
-      '/language/japanese':[
-        {
-          text: '日语基础',
-          items: [
-            {text: '五十音图', link: '/language/japanese/五十音'},
-            {text: '平假名', link: 'http://www.baidu.com'},
-            {text: '片假名', link: 'http://www.baidu.com'},
-            {text: '基础单词', link: 'http://www.baidu.com'},
-          ]
-        },
-        {
-          text: '常用语',
-          collapsed: false,
-          items: [
-            {text: '日常用语', link: '/language/japanese/常用语'}
-          ]
         }
       ],
       '/notes/docker/':[
