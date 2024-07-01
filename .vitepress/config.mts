@@ -36,10 +36,9 @@ export default defineConfig({
           { text: 'ElasticSearch', link: '/notes/elasticsearch/ElasticSearch.md' },
         ]
       },
-      { text: '前端', link: '/' },
       { text: 'Spring 全家桶', link: '/' },
       { text: 'Todo', link: '/todo/index.md' },
-      { text: '关于我', link: '/about/index.md' }
+      { text: '关于本站', link: '/about/index.md' }
     ],
 
     sidebar: {
@@ -49,9 +48,10 @@ export default defineConfig({
           text: '关于我',
           collapsed: false,
           items: [
-            { text: 'about me', link: '/about/'},
+            { text: '个人介绍', link: '/about/'},
             { text: '旅游日记', link: '/about/travel'},
-            { text: '我的经历', link: '/about/我的经历'}
+            { text: '我的经历', link: '/about/我的经历'},
+            { text: '本站配置', link: '/about/Vitepress 配置'}
           ]
         }
       ],
