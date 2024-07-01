@@ -31,10 +31,13 @@ export default defineConfig({
       { text: '后端',
         items: [
           { text: 'Spring Security', link: '/notes/spring-security/SpringSecurity.md' },
-          { text: 'springboot', link: '/notes/springboot/index.md' },
+          { text: 'Springboot', link: '/notes/springboot/Linux.md' },
+          { text: 'Linux OS', link: '/notes/linux/Linux.md' },
+          { text: 'ElasticSearch', link: '/notes/elasticsearch/ElasticSearch.md' },
         ]
       },
       { text: '前端', link: '/' },
+      { text: 'Spring 全家桶', link: '/' },
       { text: 'Todo', link: '/todo/index.md' },
       { text: '关于我', link: '/about/index.md' }
     ],
