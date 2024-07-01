@@ -1,3 +1,7 @@
+---
+outline: deep
+---
+
 # 教程：Vitepress 集成 Gitalk
 
 ## 概述

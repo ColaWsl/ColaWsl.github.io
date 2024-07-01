@@ -1,3 +1,7 @@
+---
+outline: deep
+---
+
 # ElasticSearch
 
 ![image-20240630162659584](ElasticSearch.assets/image-20240630162659584.png)

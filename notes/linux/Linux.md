@@ -1,3 +1,7 @@
+---
+outline: deep
+---
+
 # Linux
 
 发行版 Unbuntu 和 centos （更适合企业服务器 稳定）
@@ -82,8 +86,3 @@ SSH（Secure Shell，安全外壳）是**一种网络安全协议，通过加密
    ```
 
    ![image-20240701201743813](Linux.assets/image-20240701201743813.png)
-
-
-
-
-
