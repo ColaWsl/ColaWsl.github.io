@@ -132,11 +132,7 @@ linux 中的编辑器
    sudo apt install golang
    ```
 
-5. **大功告成**
-
-   来看看效果吧
-
-   
+   如果需要按需加载语言可以添加参数 `--java-completer` 
 
 ### tree 目录结构查看
 

@@ -159,8 +159,8 @@ export default defineConfig({
     ],
 
     footer: {
-      message: 'Released under the MIT License.',
-      copyright: 'Copyright © 2024-present Austin Slwang'
+      message: '基于 MIT 许可发布',
+      copyright: 'Copyright © 2024-present Austin 王升亮'
     },
 
     docFooter: {
@@ -174,8 +174,17 @@ export default defineConfig({
 
     editLink: {
       pattern: 'https://github.com/ColaWsl/ColaWsl.github.io/tree/master/:path',
-      text: 'Edit this page on GitHub'
+      text: '在 GitHub 上编辑此页'
     },
+
+    lastUpdated: {
+      text: '最后更新于',
+      formatOptions: {
+        dateStyle: 'short',
+        timeStyle: 'medium'
+      }
+    },
+
 
     search: {
       provider: 'local'

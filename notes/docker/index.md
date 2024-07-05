@@ -28,3 +28,14 @@ outline: deep
 
 #### 数据卷
 
+## 安装
+
+```sh
+ sudo apt install docker-ce docker-ce-cli containerd.io
+```
+
+## 扩展阅读
+
+- [被k8s弃用的docker还值得学吗？](https://developer.aliyun.com/article/854711)
+- 
+

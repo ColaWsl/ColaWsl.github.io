@@ -1,50 +1,52 @@
 ---
 outline: deep
 ---
+<script setup>
+import { VPTeamMembers } from 'vitepress/theme'
 
+const members = [
+  {
+    avatar: 'https://avatars.githubusercontent.com/u/89562799?v=4',
+    name: 'Austin',
+    title: 'Developer',
+    links: [
+      { icon: 'github', link: 'https://github.com/ColaWsl' },
+      { icon: 'x', link: 'https://x.com/maybe029' },
+      { icon: 'instagram', link: 'https://x.com/maybe029' },
+    ]
+  },{
+    avatar: 'https://avatars.githubusercontent.com/u/92426127?v=4',
+    name: 'Yuchen Zhang',
+    title: 'Developer',
+    links: [
+      { icon: 'github', link: 'https://github.com/dlct-wzx' },
+      { icon: 'x', link: 'https://x.com/maybe029' },
+      { icon: 'instagram', link: 'https://x.com/maybe029' },
+    ]
+  },{
+    avatar: 'https://avatars.githubusercontent.com/u/80754785?v=4',
+    name: 'Zexi Wang',
+    title: 'Developer',
+    links: [
+      { icon: 'github', link: 'https://github.com/dlct-wzx' },
+      { icon: 'x', link: 'https://x.com/maybe029' },
+      { icon: 'instagram', link: 'https://x.com/maybe029' },
+    ]
+  },{
+    avatar: 'https://avatars.githubusercontent.com/u/35999877?v=4',
+    name: 'ZhuTTTT',
+    title: 'Developer',
+    links: [
+      { icon: 'github', link: 'https://github.com/ZhuTTTT' },
+      { icon: 'x', link: 'https://x.com/maybe029' },
+      { icon: 'instagram', link: 'https://x.com/maybe029' },
+    ]
+  }
+]
+</script>
 
-# 个人简介
+# Our Team
 
-## 基本信息
-- **姓名：** 张三
-- **性别：** 男
-- **年龄：** 28岁
-- **联系方式：** [zhangsan@example.com](mailto:zhangsan@example.com)
-- **电话：** +1234567890
-- **地址：** 北京市朝阳区
+Say hello to our awesome team.
 
-## 教育背景
-- **学历：** 本科
-- **毕业院校：** NWAFU
-- **专业：** 计算机科学与技术
-- **毕业时间：** 2018年
-
-## 工作经历
-### 公司A （2018年至今）
-- **职位：** 软件工程师
-- **工作内容：** 负责开发和维护公司产品的后端系统，参与需求分析、设计和编码工作。
-
-### 公司B （2017年暑假）
-- **职位：** 实习生
-- **工作内容：** 在团队的指导下，参与了一个项目的开发，负责编写部分代码和单元测试。
-
-## 专业技能
-- 编程语言：Java, Python, JavaScript
-- 后端开发：Spring Boot, Django
-- 数据库：MySQL, MongoDB
-- 版本控制：Git
-- 单元测试：JUnit, Pytest
-
-## 项目经验
-1. **在线图书商城系统**
-    - **描述：** 开发一个支持用户注册、浏览图书、下单购买等功能的在线商城系统。
-    - **技术栈：** Spring Boot, MySQL, Thymeleaf
-    - **责任：** 负责后端接口开发和数据库设计。
-
-2. **个人博客网站**
-    - **描述：** 使用Django框架开发个人博客网站，支持用户发布文章、评论、点赞等功能。
-    - **技术栈：** Django, SQLite, Bootstrap
-    - **责任：** 负责全栈开发。
-
-## 自我评价
-我是一个热爱编程并喜欢接受挑战的软件工程师。具有良好的团队合作能力和快速学习能力，能够承担起项目中的责任并按时交付高质量的代码。对新技术充满好奇心，乐于尝试和探索新的技术和工具。
+<VPTeamMembers size="small" :members="members" />
