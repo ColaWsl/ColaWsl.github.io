@@ -149,3 +149,15 @@
     z-index: 9999 !important;/* 给的值是21，但是实测盖不住，直接999 */
 }
 /*         */
+
+
+
+/** 徽章并排显示**/
+.badge-container {
+    display: flex;
+    gap: 10px; /* 设置徽章之间的间距 */
+}
+
+.badge-container a {
+    display: inline-block;
+}

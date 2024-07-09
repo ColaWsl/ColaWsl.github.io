@@ -4,10 +4,14 @@ import timeline from 'vitepress-markdown-timeline'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+  head: [
+    // 添加 favicon 链接
+    ['link', { rel: 'icon', href: '/chatgpt.png' }],
+  ],
   title: "爱幻想的Sheep",
   description: "A VitePress Site",
   themeConfig: {
-    logo: '/home.png',
+    logo: '/chatgpt.png',
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
@@ -33,6 +37,7 @@ export default defineConfig({
           { text: 'Spring Security', link: '/notes/spring-security/SpringSecurity.md' },
           { text: 'Springboot', link: '/notes/springboot/Linux.md' },
           { text: 'Linux OS', link: '/notes/linux/Linux.md' },
+          { text: 'JVM 虚拟机', link: '/notes/jvm/bytecode.md' },
           { text: 'ElasticSearch', link: '/notes/elasticsearch/ElasticSearch.md' },
         ]
       },
@@ -72,6 +77,15 @@ export default defineConfig({
           'text': '2025',
           collapsed: false,
         }
+      ],
+      '/notes/jvm/':[
+        {
+          text: 'JVM 虚拟机相关',
+          collapsed: true,
+          items: [
+            { text: '字节码杂谈', link: '/notes/jvm/bytecode' },
+          ]
+        },
       ],
       '/notes/docker/':[
         {
@@ -185,10 +199,15 @@ export default defineConfig({
       }
     },
 
-
     search: {
       provider: 'local'
     },
+
+    // carbon 广告位
+    // carbonAds: {
+    //   code: 'your-carbon-code',
+    //   placement: 'your-carbon-placement'
+    // }
 
   },
 

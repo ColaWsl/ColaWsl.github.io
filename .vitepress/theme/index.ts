@@ -2,7 +2,7 @@
 import { h } from 'vue'
 import type { Theme } from 'vitepress'
 import DefaultTheme from 'vitepress/theme'
-import './style.css' // 控制主题美化
+// import './style.css' // 控制主题美化
 // @ts-ignore
 import Layout from './Layout.vue';
 
