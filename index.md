@@ -7,7 +7,7 @@ layout: home
 hero:
   name: "NULL神 交流"
   text: "聚焦 BTC / ETH / MEME 币种"
-  tagline: 探索交易、分享策略、记录生活的点点滴滴
+  tagline: 探索交易、分享策略、记录生活的点点滴滴                缔造下一个币圈神话
   image:
     src: /home.jpg
     alt: logo
@@ -16,11 +16,8 @@ hero:
       text: 交易入门指南
       link: /docs/trading-intro
     - theme: alt
-      text: API 接口文档
-      link: /docs/api
-    - theme: alt
-      text: GitHub
-      link: https://github.com/ColaWsl/ColaWsl.github.io
+      text: 社区介绍
+      link: /docs/community
 
 features:
   - title: 合约 & 现货实战
