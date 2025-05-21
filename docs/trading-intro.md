@@ -29,4 +29,4 @@
 - 不要 All in，不借贷炒币
 - 勤复盘、谨慎做决定
 
-👉 建议查看：[社区策略](../strategies/spot-strategy.md)、[合约基础](../strategies/futures-basic.md)
+👉 建议查看：[社区策略](./strategies/spot-strategy.md)、[合约基础](./strategies/futures-basic.md)
