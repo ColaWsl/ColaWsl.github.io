@@ -174,7 +174,7 @@ export default defineConfig({
 
     footer: {
       message: '基于 MIT 许可发布',
-      copyright: 'Copyright © 2024-present Austin 王升亮'
+      copyright: 'Copyright © 2025-present NULL'
     },
 
     docFooter: {
