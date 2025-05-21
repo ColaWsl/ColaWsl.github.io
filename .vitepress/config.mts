@@ -6,43 +6,43 @@ import timeline from 'vitepress-markdown-timeline'
 export default defineConfig({
   head: [
     // 添加 favicon 链接
-    ['link', { rel: 'icon', href: '/chatgpt.png' }],
+    ['link', { rel: 'icon', href: '/home.jpg' }],
   ],
-  title: "爱幻想的Sheep",
-  description: "A VitePress Site",
+  title: "NULL神",
+  description: "A Shared Site",
   themeConfig: {
-    logo: '/chatgpt.png',
+    logo: '/home.jpg',
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
-      {
-        text: '分类',
-        items: [
-          { text: 'redis', link: '/notes/redis/index.md' },
-          { text: 'docker', link: '/notes/docker/index.md' },
-          { text: 'springboot', link: '/notes/springboot/index.md' },
-          {
-            // 该部分的标题
-            text: '二级菜单',
-            items: [
-              { text: 'Item A', link: '...' },
-              { text: 'Item B', link: '...' }
-            ]
-          },
-          { text: '百度', link: 'https://www.baidu.com' },
-        ]
-      },
-      { text: '后端',
-        items: [
-          { text: 'Spring Security', link: '/notes/spring-security/SpringSecurity.md' },
-          { text: 'Springboot', link: '/notes/springboot/Linux.md' },
-          { text: 'Linux OS', link: '/notes/linux/Linux.md' },
-          { text: 'JVM 虚拟机', link: '/notes/jvm/bytecode.md' },
-          { text: 'ElasticSearch', link: '/notes/elasticsearch/ElasticSearch.md' },
-        ]
-      },
-      { text: 'Spring 全家桶', link: '/' },
-      { text: 'Todo', link: '/todo/index.md' },
+      // {
+      //   text: '分类',
+      //   items: [
+      //     { text: 'redis', link: '/notes/redis/index.md' },
+      //     { text: 'docker', link: '/notes/docker/index.md' },
+      //     { text: 'springboot', link: '/notes/springboot/index.md' },
+      //     {
+      //       // 该部分的标题
+      //       text: '二级菜单',
+      //       items: [
+      //         { text: 'Item A', link: '...' },
+      //         { text: 'Item B', link: '...' }
+      //       ]
+      //     },
+      //     { text: '百度', link: 'https://www.baidu.com' },
+      //   ]
+      // },
+      // { text: '后端',
+      //   items: [
+      //     { text: 'Spring Security', link: '/notes/spring-security/SpringSecurity.md' },
+      //     { text: 'Springboot', link: '/notes/springboot/Linux.md' },
+      //     { text: 'Linux OS', link: '/notes/linux/Linux.md' },
+      //     { text: 'JVM 虚拟机', link: '/notes/jvm/bytecode.md' },
+      //     { text: 'ElasticSearch', link: '/notes/elasticsearch/ElasticSearch.md' },
+      //   ]
+      // },
+      // { text: 'Spring 全家桶', link: '/' },
+      // { text: 'Todo', link: '/todo/index.md' },
       { text: '关于本站', link: '/about/index.md' }
     ],
 
